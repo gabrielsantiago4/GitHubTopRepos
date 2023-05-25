@@ -8,11 +8,17 @@
 import Foundation
 
 
-struct repository: Codable {
+struct Repository: Codable {
     var name: String
+    var description: String
+    var owner: owner
 }
 
-struct topRatedReposList: Codable {
-    var items: [repository]
+struct TopRatedReposList: Codable {
+    var items: [Repository]
+}
+
+struct owner: Codable {
+    var login: String
 }
 
