@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         API().getTopRatedRepos { repos in
+            print(repos.items[0])
             self.repos = repos.items
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -32,13 +33,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var repo = repos[indexPath.row]
+        let repo = repos[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as! CustomTableViewCell
         cell.repositoryName.text = repo.name
         cell.repositoryDescription.text = repo.description
         cell.ownerUsername.text = repo.owner.login
-        cell.ownerProfilePicture.layer.cornerRadius = cell.ownerProfilePicture.frame.size.height / 1.94
-        cell.ownerProfilePicture.layer.masksToBounds = true
         return cell
     }
 }

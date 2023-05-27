@@ -12,6 +12,8 @@ struct Repository: Codable {
     var name: String
     var description: String
     var owner: owner
+    var stargazers_count: Int
+    var forks_count: Int
 }
 
 struct TopRatedReposList: Codable {
