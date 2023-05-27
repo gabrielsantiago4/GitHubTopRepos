@@ -16,6 +16,7 @@
 		368B0A742A1E8ABC00FCB978 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A732A1E8ABC00FCB978 /* API.swift */; };
 		368B0A762A1E8ACC00FCB978 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A752A1E8ACC00FCB978 /* RepositoryModel.swift */; };
 		368B0A782A1F7AE000FCB978 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A772A1F7AE000FCB978 /* HomeViewModel.swift */; };
+		368B0A7B2A1F98C300FCB978 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		368B0A732A1E8ABC00FCB978 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		368B0A752A1E8ACC00FCB978 /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
 		368B0A772A1F7AE000FCB978 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				368B0A5D2A1E669500FCB978 /* Main.storyboard */,
 				368B0A5B2A1E669500FCB978 /* HomeViewController.swift */,
+				368B0A792A1F984D00FCB978 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -106,6 +109,14 @@
 				368B0A772A1F7AE000FCB978 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		368B0A792A1F984D00FCB978 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				368B0A762A1E8ACC00FCB978 /* RepositoryModel.swift in Sources */,
 				368B0A582A1E669500FCB978 /* AppDelegate.swift in Sources */,
 				368B0A742A1E8ABC00FCB978 /* API.swift in Sources */,
+				368B0A7B2A1F98C300FCB978 /* CustomTableViewCell.swift in Sources */,
 				368B0A5A2A1E669500FCB978 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

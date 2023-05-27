@@ -10,7 +10,7 @@ import Foundation
 
 struct API {
 
-    func getTopRatedRepos(completion: @escaping (topRatedReposList) -> Void) {
+    func getTopRatedRepos(completion: @escaping (TopRatedReposList) -> Void) {
         guard let url = URL(string: "https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1") else {
             return
         }
@@ -22,7 +22,7 @@ struct API {
                 return
             }
             do {
-                let repos = try JSONDecoder().decode(topRatedReposList.self, from: requestedData)
+                let repos = try JSONDecoder().decode(TopRatedReposList.self, from: requestedData)
                 completion(repos)
             } catch let error {
                 print(error)
