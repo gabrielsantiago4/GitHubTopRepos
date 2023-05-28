@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="152"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository description to match with current model on the GitHub Api" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-2c-YX8">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository description to match with current model on the GitHub Api" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-2c-YX8">
                                                     <rect key="frame" x="20" y="58.666666666666657" width="224" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -36,7 +36,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sLH-gY-y47" userLabel="Owner info Stack">
                                                     <rect key="frame" x="264" y="30.999999999999993" width="108.66666666666669" height="91.333333333333314"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pumpkin-orange-color-solid-background-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="MSD-UN-RCN">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultavatar" translatesAutoresizingMaskIntoConstraints="NO" id="MSD-UN-RCN">
                                                             <rect key="frame" x="24.333333333333314" y="0.0" width="60" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="6zL-38-h9Y"/>
@@ -200,7 +200,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pumpkin-orange-color-solid-background-1920x1080" width="1920" height="1080"/>
+        <image name="defaultavatar" width="271" height="270"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="tuningfork" catalog="system" width="128" height="118"/>
         <systemColor name="linkColor">
