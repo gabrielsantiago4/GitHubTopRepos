@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository description to match with current model on the GitHub Api" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-2c-YX8">
-                                                    <rect key="frame" x="20" y="59.333333333333343" width="224" height="34.666666666666657"/>
+                                                    <rect key="frame" x="20" y="58.666666666666657" width="224" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -78,7 +78,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nkg-bz-02k" userLabel="Numbers Stack">
-                                                    <rect key="frame" x="20" y="102" width="186" height="20.333333333333329"/>
+                                                    <rect key="frame" x="20" y="109.66666666666667" width="186" height="20.333333333333329"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3uo-co-0bj" userLabel="Forks Stack">
                                                             <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="20.333333333333332"/>
@@ -144,7 +144,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repository name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-qa-vi9">
-                                                    <rect key="frame" x="20" y="27" width="204" height="24"/>
+                                                    <rect key="frame" x="20" y="27" width="204" height="23.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -152,14 +152,14 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="sLH-gY-y47" secondAttribute="bottom" constant="18.670000000000002" id="5OX-0H-dWe"/>
+                                                <constraint firstItem="nkg-bz-02k" firstAttribute="top" secondItem="DLw-2c-YX8" secondAttribute="bottom" constant="15" id="79b-IH-B3q"/>
                                                 <constraint firstItem="sLH-gY-y47" firstAttribute="leading" secondItem="nkg-bz-02k" secondAttribute="trailing" constant="58" id="7wG-Bl-3qv"/>
                                                 <constraint firstItem="DLw-2c-YX8" firstAttribute="leading" secondItem="dTA-yq-k0k" secondAttribute="leadingMargin" id="Hxr-FR-yI4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nkg-bz-02k" secondAttribute="bottom" constant="11" id="IJy-zB-KMh"/>
                                                 <constraint firstItem="DLw-2c-YX8" firstAttribute="centerY" secondItem="sLH-gY-y47" secondAttribute="centerY" id="O7D-7f-ZVu"/>
                                                 <constraint firstItem="TaM-qa-vi9" firstAttribute="leading" secondItem="dTA-yq-k0k" secondAttribute="leadingMargin" id="Sqa-WP-koR"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="nkg-bz-02k" secondAttribute="bottom" constant="18.670000000000002" id="aXq-fO-Ft7"/>
                                                 <constraint firstItem="DLw-2c-YX8" firstAttribute="top" secondItem="TaM-qa-vi9" secondAttribute="bottom" constant="8.3300000000000001" id="fmT-44-3r4"/>
                                                 <constraint firstItem="nkg-bz-02k" firstAttribute="leading" secondItem="dTA-yq-k0k" secondAttribute="leadingMargin" id="iWP-Iz-nlJ"/>
-                                                <constraint firstItem="nkg-bz-02k" firstAttribute="top" secondItem="DLw-2c-YX8" secondAttribute="bottom" constant="8" symbolic="YES" id="n6K-cJ-MSc"/>
                                                 <constraint firstItem="TaM-qa-vi9" firstAttribute="top" secondItem="dTA-yq-k0k" secondAttribute="topMargin" constant="16" id="oHv-xr-Kze"/>
                                                 <constraint firstItem="sLH-gY-y47" firstAttribute="leading" secondItem="DLw-2c-YX8" secondAttribute="trailing" constant="20" id="vlk-Qx-q3L"/>
                                                 <constraint firstItem="sLH-gY-y47" firstAttribute="leading" secondItem="TaM-qa-vi9" secondAttribute="trailing" constant="40" id="wkS-Ye-fkl"/>
