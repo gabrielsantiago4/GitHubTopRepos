@@ -14,4 +14,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var ownerUsername: UILabel!
     @IBOutlet weak var ownerFullname: UILabel!
     @IBOutlet weak var ownerProfilePicture: UIImageView!
+    @IBOutlet weak var forksCount: UILabel!
+    @IBOutlet weak var starsCount: UILabel!
+
 }

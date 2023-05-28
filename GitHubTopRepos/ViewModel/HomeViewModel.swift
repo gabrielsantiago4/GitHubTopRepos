@@ -9,5 +9,19 @@ import Foundation
 
 
 class HomeViewModel {
-   //
+
+    weak var delegate: HomeViewDelegate?
+
+    var reposList: [Repository] = [] {
+        didSet {
+            delegate?.update()
+        }
+    }
+
+    func getRemoteData() {
+        API().getTopRatedRepos { repos in
+            self.reposList = repos.items
+        }
+    }
+
 }

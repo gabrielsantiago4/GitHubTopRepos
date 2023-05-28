@@ -17,6 +17,7 @@
 		368B0A762A1E8ACC00FCB978 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A752A1E8ACC00FCB978 /* RepositoryModel.swift */; };
 		368B0A782A1F7AE000FCB978 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A772A1F7AE000FCB978 /* HomeViewModel.swift */; };
 		368B0A7B2A1F98C300FCB978 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */; };
+		36A293A72A22D8B600382928 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A293A62A22D8B600382928 /* HomeViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		368B0A752A1E8ACC00FCB978 /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
 		368B0A772A1F7AE000FCB978 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		36A293A62A22D8B600382928 /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		368B0A562A1E669500FCB978 /* GitHubTopRepos */ = {
 			isa = PBXGroup;
 			children = (
+				36A293A52A22D89F00382928 /* Protocols */,
 				368B0A6E2A1E6B3900FCB978 /* Model */,
 				368B0A6B2A1E6B2300FCB978 /* View */,
 				368B0A722A1E88C700FCB978 /* ViewModel */,
@@ -117,6 +120,14 @@
 				368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		36A293A52A22D89F00382928 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				36A293A62A22D8B600382928 /* HomeViewDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				368B0A742A1E8ABC00FCB978 /* API.swift in Sources */,
 				368B0A7B2A1F98C300FCB978 /* CustomTableViewCell.swift in Sources */,
 				368B0A5A2A1E669500FCB978 /* SceneDelegate.swift in Sources */,
+				36A293A72A22D8B600382928 /* HomeViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

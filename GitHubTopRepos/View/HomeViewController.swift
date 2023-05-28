@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var repos: [Repository] = []
+    var viewModel = HomeViewModel()
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,28 +17,36 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        API().getTopRatedRepos { repos in
-            print(repos.items[0])
-            self.repos = repos.items
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
+        viewModel.delegate = self
+        viewModel.getRemoteData()
     }
 }
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repos.count
+        return viewModel.reposList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let repo = repos[indexPath.row]
+        let repo = viewModel.reposList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as! CustomTableViewCell
         cell.repositoryName.text = repo.name
         cell.repositoryDescription.text = repo.description
         cell.ownerUsername.text = repo.owner.login
+        cell.forksCount.text = "\(repo.forks_count)"
+        cell.starsCount.text = "\(repo.stargazers_count)"
         return cell
     }
 }
+
+extension HomeViewController: HomeViewDelegate {
+    func update() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+}
+
+
 

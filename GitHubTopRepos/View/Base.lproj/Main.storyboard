@@ -91,11 +91,13 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="forksCount" destination="J9A-8E-0Tn" id="ZSt-lB-846"/>
                                             <outlet property="ownerFullname" destination="bCg-r5-Pza" id="QQ5-KJ-rDc"/>
                                             <outlet property="ownerProfilePicture" destination="MSD-UN-RCN" id="yfT-a8-UtQ"/>
                                             <outlet property="ownerUsername" destination="nKS-Uw-loF" id="pam-sH-DUc"/>
                                             <outlet property="repositoryDescription" destination="DLw-2c-YX8" id="HUO-yS-Y1Y"/>
                                             <outlet property="repositoryName" destination="TaM-qa-vi9" id="M96-wZ-1dl"/>
+                                            <outlet property="starsCount" destination="D6M-fa-wEE" id="tOq-Oj-gpS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
