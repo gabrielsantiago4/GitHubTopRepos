@@ -66,11 +66,12 @@
 		368B0A562A1E669500FCB978 /* GitHubTopRepos */ = {
 			isa = PBXGroup;
 			children = (
-				36A293A52A22D89F00382928 /* Protocols */,
 				368B0A6E2A1E6B3900FCB978 /* Model */,
 				368B0A6B2A1E6B2300FCB978 /* View */,
 				368B0A722A1E88C700FCB978 /* ViewModel */,
 				368B0A6D2A1E6B3200FCB978 /* Service */,
+				36A293A52A22D89F00382928 /* Protocols */,
+				36A293A82A242C4800382928 /* Extensions */,
 				368B0A572A1E669500FCB978 /* AppDelegate.swift */,
 				368B0A592A1E669500FCB978 /* SceneDelegate.swift */,
 				368B0A602A1E669600FCB978 /* Assets.xcassets */,
@@ -128,6 +129,13 @@
 				36A293A62A22D8B600382928 /* HomeViewDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		36A293A82A242C4800382928 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

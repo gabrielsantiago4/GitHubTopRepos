@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository description to match with current model on the GitHub Api" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-2c-YX8">
-                                                    <rect key="frame" x="20" y="58.666666666666657" width="224" height="36"/>
+                                                    <rect key="frame" x="20" y="59.333333333333343" width="224" height="34.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -78,17 +78,21 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nkg-bz-02k" userLabel="Numbers Stack">
-                                                    <rect key="frame" x="20" y="109.66666666666667" width="186" height="20.333333333333329"/>
+                                                    <rect key="frame" x="20" y="109" width="186" height="21"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3uo-co-0bj" userLabel="Forks Stack">
-                                                            <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="20.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="21"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tuningfork" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tUA-yI-hLS">
-                                                                    <rect key="frame" x="0.0" y="0.6666666666666643" width="21.333333333333332" height="19.666666666666668"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="tUA-yI-hLS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="21.333333333333332" height="21"/>
                                                                     <color key="tintColor" red="0.96470588239999999" green="0.41960784309999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21" id="bjT-gJ-JQv"/>
+                                                                        <constraint firstAttribute="width" constant="21.329999999999998" id="fHd-ZN-BcS"/>
+                                                                    </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J9A-8E-0Tn">
-                                                                    <rect key="frame" x="29.333333333333332" y="0.0" width="48.333333333333343" height="20.333333333333332"/>
+                                                                    <rect key="frame" x="29.333333333333332" y="0.0" width="48.333333333333343" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <color key="textColor" red="0.96470588239999999" green="0.41960784309999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -105,17 +109,19 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a8N-PT-Zif" userLabel="Stars Stack">
-                                                            <rect key="frame" x="107.66666666666669" y="0.0" width="78.333333333333314" height="20.333333333333332"/>
+                                                            <rect key="frame" x="107.66666666666669" y="0.0" width="78.333333333333314" height="21"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GxS-Ud-E2W">
-                                                                    <rect key="frame" x="0.0" y="-0.33333333333333215" width="22" height="19.999999999999996"/>
+                                                                    <rect key="frame" x="0.0" y="-0.33333333333333215" width="22" height="20.666666666666664"/>
                                                                     <color key="tintColor" red="0.96470588239999999" green="0.41960784309999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="Gmw-1M-NKE"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="jGB-FF-dk5"/>
                                                                         <constraint firstAttribute="width" constant="22" id="oe7-s0-6AF"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="D6M-fa-wEE">
-                                                                    <rect key="frame" x="29.999999999999989" y="0.0" width="48.333333333333343" height="20.333333333333332"/>
+                                                                    <rect key="frame" x="29.999999999999989" y="0.0" width="48.333333333333343" height="21"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                     <color key="textColor" red="0.96470588239999999" green="0.41960784309999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -144,7 +150,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repository name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-qa-vi9">
-                                                    <rect key="frame" x="20" y="27" width="204" height="23.333333333333329"/>
+                                                    <rect key="frame" x="20" y="27" width="204" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -201,8 +207,8 @@
     </scenes>
     <resources>
         <image name="defaultavatar" width="271" height="270"/>
+        <image name="forkIcon" width="1200" height="1920"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <image name="tuningfork" catalog="system" width="128" height="118"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
