@@ -17,4 +17,14 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var forksCount: UILabel!
     @IBOutlet weak var starsCount: UILabel!
 
+
+    func configureCell(with repository: Repository) {
+        self.repositoryName.text = repository.name
+        self.repositoryDescription.text = repository.description
+        self.ownerUsername.text = repository.owner.login
+        self.ownerProfilePicture.loadRemoteImage(url: repository.owner.avatar_url)
+        self.forksCount.text = "\(repository.forks_count)"
+        self.starsCount.text = "\(repository.stargazers_count)"
+    }
+
 }

@@ -23,5 +23,10 @@ struct TopRatedReposList: Codable {
 struct owner: Codable {
     var login: String
     var avatar_url: String
+    var url: String
+}
+
+struct gitUser: Codable {
+    var name: String
 }
 

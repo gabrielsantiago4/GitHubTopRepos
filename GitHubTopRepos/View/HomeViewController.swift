@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         viewModel.delegate = self
-        viewModel.getRemoteData()
+        viewModel.getRepositoriesData(language: "Java")
     }
 }
 
@@ -31,14 +31,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let repo = viewModel.reposList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as! CustomTableViewCell
-        cell.repositoryName.text = repo.name
-        cell.repositoryDescription.text = repo.description
-        cell.ownerUsername.text = repo.owner.login
-        cell.ownerProfilePicture.loadRemoteImage(url: repo.owner.avatar_url)
-        cell.forksCount.text = "\(repo.forks_count)"
-        cell.starsCount.text = "\(repo.stargazers_count)"
+        cell.configureCell(with: repo)
         return cell
     }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //
+    }
+
 }
 
 extension HomeViewController: HomeViewDelegate {

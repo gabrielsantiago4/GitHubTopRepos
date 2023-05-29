@@ -10,8 +10,8 @@ import Foundation
 
 struct API {
 
-    func getTopRatedRepos(completion: @escaping (TopRatedReposList) -> Void) {
-        guard let url = URL(string: "https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1") else {
+    func getTopRatedRepos(language: String, completion: @escaping (TopRatedReposList) -> Void) {
+        guard let url = URL(string: "https://api.github.com/search/repositories?q=language:\(language)&sort=stars&page=1") else {
             return
         }
 
@@ -30,4 +30,26 @@ struct API {
         }
         task.resume()
     }
+
+    func getUser (url: String, completion: @escaping (gitUser) -> Void) {
+        guard let url = URL(string: url) else {
+            return
+        }
+
+        let urlRequest = URLRequest(url: url)
+
+        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+            guard let requestedData = data else {
+                return
+            }
+            do {
+                let gitUser = try JSONDecoder().decode(gitUser.self, from: requestedData)
+                completion(gitUser)
+            } catch let error {
+                print(error)
+            }
+        }
+        task.resume()
+    }
+
 }
