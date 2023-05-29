@@ -34,6 +34,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.repositoryName.text = repo.name
         cell.repositoryDescription.text = repo.description
         cell.ownerUsername.text = repo.owner.login
+        cell.ownerProfilePicture.loadRemoteImage(url: repo.owner.avatar_url)
         cell.forksCount.text = "\(repo.forks_count)"
         cell.starsCount.text = "\(repo.stargazers_count)"
         return cell
