@@ -19,7 +19,18 @@
 		368B0A7B2A1F98C300FCB978 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */; };
 		36A293A72A22D8B600382928 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A293A62A22D8B600382928 /* HomeViewDelegate.swift */; };
 		36A293AC2A24467200382928 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A293AB2A24467200382928 /* ImageViewExtension.swift */; };
+		36D393522A255504002B77E5 /* GitHubTopReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D393512A255504002B77E5 /* GitHubTopReposTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36D393532A255504002B77E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368B0A4C2A1E669500FCB978 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368B0A532A1E669500FCB978;
+			remoteInfo = GitHubTopRepos;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		368B0A542A1E669500FCB978 /* GitHubTopRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubTopRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +47,19 @@
 		368B0A7A2A1F98C300FCB978 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		36A293A62A22D8B600382928 /* HomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDelegate.swift; sourceTree = "<group>"; };
 		36A293AB2A24467200382928 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		36D3934F2A255504002B77E5 /* GitHubTopReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubTopReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D393512A255504002B77E5 /* GitHubTopReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTopReposTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		368B0A512A1E669500FCB978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D3934C2A255504002B77E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				368B0A562A1E669500FCB978 /* GitHubTopRepos */,
+				36D393502A255504002B77E5 /* GitHubTopReposTests */,
 				368B0A552A1E669500FCB978 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				368B0A542A1E669500FCB978 /* GitHubTopRepos.app */,
+				36D3934F2A255504002B77E5 /* GitHubTopReposTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +163,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		36D393502A255504002B77E5 /* GitHubTopReposTests */ = {
+			isa = PBXGroup;
+			children = (
+				36D393512A255504002B77E5 /* GitHubTopReposTests.swift */,
+			);
+			path = GitHubTopReposTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +191,24 @@
 			productReference = 368B0A542A1E669500FCB978 /* GitHubTopRepos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		36D3934E2A255504002B77E5 /* GitHubTopReposTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36D393552A255504002B77E5 /* Build configuration list for PBXNativeTarget "GitHubTopReposTests" */;
+			buildPhases = (
+				36D3934B2A255504002B77E5 /* Sources */,
+				36D3934C2A255504002B77E5 /* Frameworks */,
+				36D3934D2A255504002B77E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36D393542A255504002B77E5 /* PBXTargetDependency */,
+			);
+			name = GitHubTopReposTests;
+			productName = GitHubTopReposTests;
+			productReference = 36D3934F2A255504002B77E5 /* GitHubTopReposTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +221,10 @@
 				TargetAttributes = {
 					368B0A532A1E669500FCB978 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					36D3934E2A255504002B77E5 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 368B0A532A1E669500FCB978;
 					};
 				};
 			};
@@ -190,6 +242,7 @@
 			projectRoot = "";
 			targets = (
 				368B0A532A1E669500FCB978 /* GitHubTopRepos */,
+				36D3934E2A255504002B77E5 /* GitHubTopReposTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +255,13 @@
 				368B0A642A1E669600FCB978 /* LaunchScreen.storyboard in Resources */,
 				368B0A612A1E669600FCB978 /* Assets.xcassets in Resources */,
 				368B0A5F2A1E669500FCB978 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D3934D2A255504002B77E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +284,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		36D3934B2A255504002B77E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D393522A255504002B77E5 /* GitHubTopReposTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36D393542A255504002B77E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368B0A532A1E669500FCB978 /* GitHubTopRepos */;
+			targetProxy = 36D393532A255504002B77E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		368B0A5D2A1E669500FCB978 /* Main.storyboard */ = {
@@ -370,11 +446,12 @@
 				DEVELOPMENT_TEAM = 8D2H27TXKN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GitHubTopRepos/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GitPop;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,11 +475,12 @@
 				DEVELOPMENT_TEAM = 8D2H27TXKN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GitHubTopRepos/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GitPop;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,6 +491,42 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		36D393562A255504002B77E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8D2H27TXKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ada.ifce.GitHubTopReposTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubTopRepos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitHubTopRepos";
+			};
+			name = Debug;
+		};
+		36D393572A255504002B77E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8D2H27TXKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ada.ifce.GitHubTopReposTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitHubTopRepos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GitHubTopRepos";
 			};
 			name = Release;
 		};
@@ -433,6 +547,15 @@
 			buildConfigurations = (
 				368B0A692A1E669600FCB978 /* Debug */,
 				368B0A6A2A1E669600FCB978 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D393552A255504002B77E5 /* Build configuration list for PBXNativeTarget "GitHubTopReposTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D393562A255504002B77E5 /* Debug */,
+				36D393572A255504002B77E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

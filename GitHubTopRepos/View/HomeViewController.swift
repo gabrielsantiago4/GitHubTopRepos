@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         tableView.delegate = self
         viewModel.delegate = self
         viewModel.getRepositoriesData(language: "Java")
+
     }
 }
 
@@ -31,14 +32,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let repo = viewModel.reposList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as! CustomTableViewCell
+        API().getUser(url: repo.owner.url) { gitUser in
+            DispatchQueue.main.async {
+                cell.ownerFullname.text = gitUser.name
+            }
+        }
         cell.configureCell(with: repo)
         return cell
     }
-
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        //
-    }
-
 }
 
 extension HomeViewController: HomeViewDelegate {

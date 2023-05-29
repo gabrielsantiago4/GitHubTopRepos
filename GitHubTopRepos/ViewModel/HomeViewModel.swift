@@ -18,22 +18,9 @@ class HomeViewModel {
         }
     }
 
-    var user: gitUser = gitUser(name: ""){
-        didSet {
-            delegate?.update()
-        }
-    }
-
     func getRepositoriesData(language: String) {
         API().getTopRatedRepos(language: language) { repos in
             self.reposList = repos.items
-        }
-    }
-
-    func getUserData(url: String) {
-        API().getUser(url: url) { gitUser in
-            self.user = gitUser
-
         }
     }
 }

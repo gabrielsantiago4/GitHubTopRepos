@@ -26,7 +26,7 @@ struct owner: Codable {
     var url: String
 }
 
-struct gitUser: Codable {
+struct GitUser: Codable {
     var name: String
 }
 

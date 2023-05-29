@@ -31,7 +31,7 @@ struct API {
         task.resume()
     }
 
-    func getUser (url: String, completion: @escaping (gitUser) -> Void) {
+    func getUser (url: String, completion: @escaping (GitUser) -> Void) {
         guard let url = URL(string: url) else {
             return
         }
@@ -43,7 +43,7 @@ struct API {
                 return
             }
             do {
-                let gitUser = try JSONDecoder().decode(gitUser.self, from: requestedData)
+                let gitUser = try JSONDecoder().decode(GitUser.self, from: requestedData)
                 completion(gitUser)
             } catch let error {
                 print(error)
