@@ -15,19 +15,19 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var headerTitle: UILabel!
     @IBOutlet weak var configButton: UIButton!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         viewModel.delegate = self
-        viewModel.getRepositoriesData(language: "Swift")
+        viewModel.getRepositoriesData(language: "Java")
     }
 
     @IBAction func configButtonAction(_ sender: Any) {
-        print("apertou")
+        let presentedView = self.storyboard?.instantiateViewController(withIdentifier:"languagesTab") as! LanguagesTabController
+        presentedView.delegate = self
+        present(presentedView, animated: true)
     }
-
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -54,6 +54,14 @@ extension HomeViewController: HomeViewDelegate {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+}
+
+extension HomeViewController: languagesTabDelegate {
+    func changeDisplayedLanguage(to language: String) {
+        viewModel.getRepositoriesData(language: language)
+        headerTitle.text = "Github \(language)Pop"
+        dismiss(animated: true)
     }
 }
 

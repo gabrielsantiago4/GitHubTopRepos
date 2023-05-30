@@ -20,6 +20,8 @@
 		36A293A72A22D8B600382928 /* HomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A293A62A22D8B600382928 /* HomeViewDelegate.swift */; };
 		36A293AC2A24467200382928 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A293AB2A24467200382928 /* ImageViewExtension.swift */; };
 		36D393522A255504002B77E5 /* GitHubTopReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D393512A255504002B77E5 /* GitHubTopReposTests.swift */; };
+		36D393592A25A834002B77E5 /* LanguagesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D393582A25A834002B77E5 /* LanguagesTabController.swift */; };
+		36D3935B2A25AA21002B77E5 /* LanguagesTabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3935A2A25AA21002B77E5 /* LanguagesTabDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		36A293AB2A24467200382928 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		36D3934F2A255504002B77E5 /* GitHubTopReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubTopReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D393512A255504002B77E5 /* GitHubTopReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTopReposTests.swift; sourceTree = "<group>"; };
+		36D393582A25A834002B77E5 /* LanguagesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTabController.swift; sourceTree = "<group>"; };
+		36D3935A2A25AA21002B77E5 /* LanguagesTabDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTabDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			children = (
 				368B0A5D2A1E669500FCB978 /* Main.storyboard */,
 				368B0A5B2A1E669500FCB978 /* HomeViewController.swift */,
+				36D393582A25A834002B77E5 /* LanguagesTabController.swift */,
 				368B0A792A1F984D00FCB978 /* Cells */,
 			);
 			path = View;
@@ -151,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				36A293A62A22D8B600382928 /* HomeViewDelegate.swift */,
+				36D3935A2A25AA21002B77E5 /* LanguagesTabDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -276,11 +282,13 @@
 				368B0A782A1F7AE000FCB978 /* HomeViewModel.swift in Sources */,
 				368B0A762A1E8ACC00FCB978 /* RepositoryModels.swift in Sources */,
 				368B0A582A1E669500FCB978 /* AppDelegate.swift in Sources */,
+				36D3935B2A25AA21002B77E5 /* LanguagesTabDelegate.swift in Sources */,
 				36A293AC2A24467200382928 /* ImageViewExtension.swift in Sources */,
 				368B0A742A1E8ABC00FCB978 /* API.swift in Sources */,
 				368B0A7B2A1F98C300FCB978 /* CustomTableViewCell.swift in Sources */,
 				368B0A5A2A1E669500FCB978 /* SceneDelegate.swift in Sources */,
 				36A293A72A22D8B600382928 /* HomeViewDelegate.swift in Sources */,
+				36D393592A25A834002B77E5 /* LanguagesTabController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
