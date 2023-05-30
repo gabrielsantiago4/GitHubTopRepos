@@ -22,6 +22,7 @@
 		36D393522A255504002B77E5 /* GitHubTopReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D393512A255504002B77E5 /* GitHubTopReposTests.swift */; };
 		36D393592A25A834002B77E5 /* LanguagesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D393582A25A834002B77E5 /* LanguagesTabController.swift */; };
 		36D3935B2A25AA21002B77E5 /* LanguagesTabDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D3935A2A25AA21002B77E5 /* LanguagesTabDelegate.swift */; };
+		36F67C042A266AA500F5CD03 /* DoubleHomeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F67C032A266AA500F5CD03 /* DoubleHomeViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		36D393512A255504002B77E5 /* GitHubTopReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTopReposTests.swift; sourceTree = "<group>"; };
 		36D393582A25A834002B77E5 /* LanguagesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTabController.swift; sourceTree = "<group>"; };
 		36D3935A2A25AA21002B77E5 /* LanguagesTabDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTabDelegate.swift; sourceTree = "<group>"; };
+		36F67C032A266AA500F5CD03 /* DoubleHomeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleHomeViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				36D393512A255504002B77E5 /* GitHubTopReposTests.swift */,
+				36F67C032A266AA500F5CD03 /* DoubleHomeViewDelegate.swift */,
 			);
 			path = GitHubTopReposTests;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36D393522A255504002B77E5 /* GitHubTopReposTests.swift in Sources */,
+				36F67C042A266AA500F5CD03 /* DoubleHomeViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

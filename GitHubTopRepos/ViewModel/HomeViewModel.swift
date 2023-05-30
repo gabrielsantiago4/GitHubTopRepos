@@ -18,11 +18,13 @@ class HomeViewModel {
         }
     }
 
-    func getRepositoriesData(language: String) {
+    func getRepositoriesData(language: String, completion: @escaping () -> Void = { }) {
         API().getTopRatedRepos(language: language) { repos in
             self.reposList = repos.items
+            completion()
         }
     }
+
 
     
 }
