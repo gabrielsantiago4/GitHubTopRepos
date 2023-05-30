@@ -10,8 +10,8 @@ import Foundation
 
 struct Repository: Codable {
     var name: String
-    var description: String
-    var owner: owner
+    var description: String?
+    var owner: Owner
     var stargazers_count: Int
     var forks_count: Int
 }
@@ -20,13 +20,13 @@ struct TopRatedReposList: Codable {
     var items: [Repository]
 }
 
-struct owner: Codable {
+struct Owner: Codable {
     var login: String
     var avatar_url: String
     var url: String
 }
 
 struct GitUser: Codable {
-    var name: String
+    var name: String?
 }
 

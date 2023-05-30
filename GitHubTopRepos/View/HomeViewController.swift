@@ -12,15 +12,22 @@ class HomeViewController: UIViewController {
     var viewModel = HomeViewModel()
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var headerTitle: UILabel!
+    @IBOutlet weak var configButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
         viewModel.delegate = self
-        viewModel.getRepositoriesData(language: "Java")
-
+        viewModel.getRepositoriesData(language: "Swift")
     }
+
+    @IBAction func configButtonAction(_ sender: Any) {
+        print("apertou")
+    }
+
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
