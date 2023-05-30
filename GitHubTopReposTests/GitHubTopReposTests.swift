@@ -29,22 +29,33 @@ final class GitHubTopReposTests: XCTestCase {
     func testHomeViewDelegate_plaintext_delegateUpdateHomeViewCalled() throws {
 
         // given
-        var expectedResult = "changed"
+        let expectedResult = "changed"
 
         let expectation = XCTestExpectation(description: "delegateUpdateHomeViewCalled")
 
         // when
         sut.getRepositoriesData(language: "Java") {
             XCTAssertNotNil(self.double.labelTextParam)
+            XCTAssertEqual(self.double.labelTextParam, expectedResult)
+            expectation.fulfill()
+        }
+        // then
+        wait(for: [expectation])
+    }
+
+    func testHomeViewModel_repositoriesArray_testGetReporitoriesDataCalled() throws {
+
+        // given
+
+        let expectation = XCTestExpectation(description: "GetRepositoriesDataCalled")
+
+        // when
+        sut.getRepositoriesData (language: "Java") {
+            XCTAssertNotNil(self.sut.reposList[0])
             expectation.fulfill()
         }
 
-        // then
-
-
         wait(for: [expectation])
-
     }
-
 
 }
