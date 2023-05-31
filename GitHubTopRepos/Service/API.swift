@@ -15,10 +15,7 @@ struct API {
             return
         }
 
-        let headers = ["Authorization" : "Bearer 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"]
-
-        var urlRequest = URLRequest(url: url)
-        urlRequest.allHTTPHeaderFields = headers
+        let urlRequest = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard let requestedData = data else {
@@ -39,10 +36,7 @@ struct API {
             return
         }
 
-        let headers = ["Authorization" : "Bearer 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"]
-        var urlRequest = URLRequest(url: url)
-        urlRequest.allHTTPHeaderFields = headers
-
+        let urlRequest = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             guard let requestedData = data else {
