@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol languagesTabDelegate: AnyObject {
+protocol LanguagesTabDelegate: AnyObject {
     func changeDisplayedLanguage(to language: String)
 }

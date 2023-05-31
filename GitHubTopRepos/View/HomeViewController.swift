@@ -58,7 +58,7 @@ extension HomeViewController: HomeViewDelegate {
     }
 }
 
-extension HomeViewController: languagesTabDelegate {
+extension HomeViewController: LanguagesTabDelegate {
     func changeDisplayedLanguage(to language: String) {
         viewModel.getRepositoriesData(language: language)
         headerTitle.text = "Github \(language)Pop"

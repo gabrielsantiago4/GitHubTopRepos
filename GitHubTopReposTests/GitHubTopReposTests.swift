@@ -43,7 +43,7 @@ final class GitHubTopReposTests: XCTestCase {
         wait(for: [expectation])
     }
 
-    func testHomeViewModel_repositoriesArray_testGetReporitoriesDataCalled() throws {
+    func testHomeViewModel_repositoriesArray_GetReporitoriesDataCalled() throws {
 
         // given
 
