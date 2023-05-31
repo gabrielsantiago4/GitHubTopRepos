@@ -44,6 +44,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.ownerFullname.text = gitUser.name
             }
         }
+        cell.isUserInteractionEnabled = false
         cell.configureCell(with: repo)
         return cell
     }
