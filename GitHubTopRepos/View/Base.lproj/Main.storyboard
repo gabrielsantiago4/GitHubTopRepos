@@ -251,69 +251,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pru-8I-UW8">
-                                <rect key="frame" x="38" y="350" width="107" height="105"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pru-8I-UW8">
+                                <rect key="frame" x="38" y="553" width="107" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="hnR-5z-7PL"/>
+                                    <constraint firstAttribute="height" constant="105" id="uae-xa-haf"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="swifticon"/>
                                 <connections>
                                     <action selector="swiftButtonAction:" destination="V6m-1T-36z" eventType="touchUpInside" id="ccy-9r-gYF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkH-gJ-E8s">
-                                <rect key="frame" x="216" y="350" width="117" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkH-gJ-E8s">
+                                <rect key="frame" x="216" y="551" width="117" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="Aae-wS-Oi2"/>
+                                    <constraint firstAttribute="width" constant="117" id="jHg-7u-wwJ"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="cicon"/>
                                 <connections>
                                     <action selector="cplusButtonAction:" destination="V6m-1T-36z" eventType="touchUpInside" id="Xay-J6-o1Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUd-be-Xbt">
-                                <rect key="frame" x="216" y="156" width="125" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="kotlinicon"/>
-                                <connections>
-                                    <action selector="kotlinButtonAction:" destination="V6m-1T-36z" eventType="touchUpInside" id="P7J-KA-D8x"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hm8-UA-28a">
-                                <rect key="frame" x="207" y="519" width="134" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="rubyicon.jpg"/>
-                                <connections>
-                                    <action selector="rubyButtonAction:" destination="V6m-1T-36z" eventType="touchUpInside" id="ZJF-fY-sj8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsr-ZJ-wXH">
-                                <rect key="frame" x="42" y="529" width="103" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="pythonicon.svg"/>
-                                <connections>
-                                    <action selector="pythonButtonAction:" destination="V6m-1T-36z" eventType="touchUpInside" id="DY6-zv-aoX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8I-o6-tAN">
-                                <rect key="frame" x="16" y="148" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8I-o6-tAN">
+                                <rect key="frame" x="16" y="227" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="F3I-7N-fj0"/>
+                                    <constraint firstAttribute="height" constant="150" id="Jg1-zY-cOG"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="javaicon"/>
                                 <connections>
                                     <action selector="javaButtonAction:" destination="V6m-1T-36z" eventType="touchUpInside" id="vfE-DW-Ser"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hm8-UA-28a">
+                                <rect key="frame" x="207" y="247" width="134" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="98v-gj-Agg"/>
+                                    <constraint firstAttribute="width" constant="134" id="yW0-Uk-UGY"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="rubyicon.jpg"/>
+                                <connections>
+                                    <action selector="rubyButtonAction:" destination="V6m-1T-36z" eventType="touchUpInside" id="ZJF-fY-sj8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kLq-AH-U8X"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kLq-AH-U8X" firstAttribute="bottom" secondItem="SkH-gJ-E8s" secondAttribute="bottom" constant="110" id="IAj-IR-uen"/>
+                            <constraint firstItem="Hm8-UA-28a" firstAttribute="top" secondItem="kLq-AH-U8X" secondAttribute="top" constant="197" id="WiP-Ws-DwO"/>
+                            <constraint firstItem="kLq-AH-U8X" firstAttribute="bottom" secondItem="Pru-8I-UW8" secondAttribute="bottom" constant="120" id="XhC-Xe-Sa5"/>
+                            <constraint firstItem="Pru-8I-UW8" firstAttribute="leading" secondItem="kLq-AH-U8X" secondAttribute="leading" constant="38" id="dWJ-7e-HqG"/>
+                            <constraint firstItem="c8I-o6-tAN" firstAttribute="leading" secondItem="kLq-AH-U8X" secondAttribute="leading" constant="16" id="jP4-0C-a7K"/>
+                            <constraint firstItem="c8I-o6-tAN" firstAttribute="top" secondItem="kLq-AH-U8X" secondAttribute="top" constant="177" id="kl1-dY-CAR"/>
+                            <constraint firstItem="kLq-AH-U8X" firstAttribute="trailing" secondItem="Hm8-UA-28a" secondAttribute="trailing" constant="34" id="qvL-bZ-B8l"/>
+                            <constraint firstItem="kLq-AH-U8X" firstAttribute="trailing" secondItem="SkH-gJ-E8s" secondAttribute="trailing" constant="42" id="rGj-86-yLE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cplusButton" destination="SkH-gJ-E8s" id="dmh-6d-3Mu"/>
                         <outlet property="javaButton" destination="c8I-o6-tAN" id="sVd-Nl-jG2"/>
-                        <outlet property="kotlinButton" destination="pUd-be-Xbt" id="q7d-Cb-5KU"/>
-                        <outlet property="pythonButton" destination="vsr-ZJ-wXH" id="hZF-QZ-26Y"/>
                         <outlet property="rubyButton" destination="Hm8-UA-28a" id="5fz-Fz-EjS"/>
                         <outlet property="swiftButton" destination="Pru-8I-UW8" id="c2V-lC-I3Z"/>
                     </connections>
@@ -328,9 +330,7 @@
         <image name="defaultavatar" width="271" height="270"/>
         <image name="forkIcon" width="1200" height="1920"/>
         <image name="javaicon" width="512" height="512"/>
-        <image name="kotlinicon" width="512" height="512"/>
         <image name="menuicon" width="500" height="500"/>
-        <image name="pythonicon.svg" width="1869" height="2048"/>
         <image name="rubyicon.jpg" width="180" height="180"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="swifticon" width="512" height="512"/>
